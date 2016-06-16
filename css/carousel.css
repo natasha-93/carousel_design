@@ -1,0 +1,148 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer, with nav and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-header {
+  min-height: 60px;
+  padding-top: 5px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+}
+body > .container {
+  padding: 60px 15px 0;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  min-height: 350px;
+  margin-bottom: 50px;
+}
+/* Since positioning the image, we need to help out the caption 
+.carousel-caption { 
+  z-index: 10;
+} */
+
+
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  min-height: 350px;
+  background-color: #222;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 525px;
+  width:100%;
+  min-height: 350px;
+ 
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 600px) {
+
+  .carousel,
+  .carousel .item,
+  .carousel-inner > .item > img {
+    height: 550px;
+    min-width: 825px;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+ 
+
+  /* Bump up size of carousel and content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+  .carousel {
+  height: 650px;
+  margin-bottom: 60px;
+  }
+  .carousel .item,
+  .carousel-inner > .item > img {
+  height: 650px;
+  min-width: 975px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+  .carousel,
+  .carousel .item,
+  .carousel-inner > .item > img {
+    height: 810px;
+    min-width: 1200px;
+  }
+}
